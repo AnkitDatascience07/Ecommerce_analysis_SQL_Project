@@ -15,7 +15,7 @@ This analysis was structured to answer key questions vital to the business:
 
 *   **Language:** SQL (Google BigQuery Dialect)
 *   **Database:** Google BigQuery
-*   **Visualization:** Tableau / Power BI / Google Looker Studio *(please edit with the tool you used)*
+
 
 ---
 
@@ -37,8 +37,6 @@ The business is expanding at an impressive rate, with order volume growing over 
 *   **Insight:** São Paulo is our engine. It is not just our largest market but also our most efficient, boasting the fastest average delivery times (8.2 days) and a highly engaged customer base.
 *   **The Opportunity:** While São Paulo is our anchor, there is a clear and immediate opportunity for growth in secondary markets like Rio de Janeiro and Minas Gerais. These states show strong demand but have not yet received the strategic focus required to reach their full potential.
 
-*(Placeholder for Customer Distribution by State Map)*
-![Customer Distribution Map](visualizations/customer_distribution_map.png)
 
 ### Key Finding 2: A Critical Divide in Customer Experience
 
@@ -47,8 +45,7 @@ The data reveals a stark difference in the customer experience between regions. 
 *   **Insight:** A delivery in São Paulo takes, on average, just **8 days**. In stark contrast, an order to more remote northern states like Roraima (RR) can take over **18 days**. This vast disparity means a "Target customer" in one part of Brazil has a fundamentally different, and worse, experience than in another.
 *   **The Problem:** High freight costs and long delivery times in these "frontier" states create dissatisfied customers and make sustainable growth almost impossible. We cannot become a national leader with a fractured logistics network.
 
-*(Placeholder for Average Delivery Time by State Chart)*
-![Delivery Time Chart](visualizations/delivery_time_chart.png)
+
 
 ### Key Finding 3: Brazilian Customers Have Clear & Actionable Habits
 
@@ -90,4 +87,3 @@ We should use the clear patterns in customer behavior to our advantage to increa
     git clone https://github.com/AnkitDatascience07/Ecommerce_analysis_SQL_Project.git
     ```
 2.  **Run the Analysis:** The complete set of queries used for this study can be found in `sql_queries/analysis.sql`. These queries are written for Google BigQuery and can be executed directly in the BQ console.
-3.  **View the Visualizations:** Key charts and dashboards are located in the `/visualizations` folder. *(Ensure you create these visuals and add them to the folder)*.
