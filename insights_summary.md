@@ -1,334 +1,93 @@
-# Executive Insights Summary: Target Brazil E-commerce Analysis
+# Target Brazil: An E-Commerce Business Intelligence Study (2016-2018)
 
-## Executive Overview
+## Project Overview
 
-This comprehensive analysis of Target's Brazilian e-commerce operations from September 2016 to October 2018 reveals a dynamic growth story marked by exceptional expansion opportunities and operational challenges. Through detailed examination of over 100,000 orders across 27 Brazilian states, several critical insights emerge that will fundamentally shape Target's strategic direction in Latin America's largest e-commerce market.
+This project is a comprehensive analysis of Target's e-commerce operations in Brazil from 2016 to 2018. As a data analyst, I leveraged SQL to query a large-scale database to uncover critical insights across customer behavior, geographic sales patterns, and logistical performance. The primary objective was to translate raw data into a clear, actionable strategic roadmap to drive business growth and enhance operational efficiency.
 
-The analysis uncovers a business experiencing rapid growth but facing geographic disparities that present both significant opportunities and operational complexities. Our findings indicate that while Target has established a strong foothold in Brazil's metropolitan markets, substantial untapped potential exists in secondary and tertiary markets that could drive the next phase of expansion.
+## Key Business Questions
 
-## 🎯 Core Performance Metrics
+This analysis was structured to answer key questions vital to the business:
+1.  **Growth & Performance:** What is the true trajectory of our growth, and which geographic markets are driving it?
+2.  **Customer Experience:** Is there a consistent customer experience across Brazil, particularly regarding delivery times?
+3.  **Behavioral Patterns:** What are the distinct purchasing habits of our Brazilian customers, from preferred shopping times to payment methods?
 
-### Business Growth Trajectory
+## Tech Stack
 
-**Order Volume Performance:**
-- Baseline Period (Sep-Dec 2016): 946 orders establishing initial market presence
-- Growth Phase (2017): 45,298 orders representing 4,687% year-over-year increase
-- Expansion Phase (2018): 96,478 orders demonstrating sustained momentum with 113% growth
+*   **Language:** SQL (Google BigQuery Dialect)
+*   **Database:** Google BigQuery
+*   **Visualization:** Tableau / Power BI / Google Looker Studio *(please edit with the tool you used)*
 
-**Revenue Performance:**
-- 2017-2018 Jan-Aug Comparison: 135.6% revenue increase maintaining consistent growth trajectory
-- Average order value stabilization at R$ 137.75 indicating healthy pricing power
-- Payment success rate of 99.8% demonstrating robust transaction processing infrastructure
+---
 
-**Market Penetration Analysis:**
-- Geographic Reach: 99,441 unique customers distributed across all 27 Brazilian states
-- Customer Concentration: Top 5 states account for 76.8% of customer base
-- Market Depth: 4,119 cities served with varying penetration levels
+## Analysis of Target Brazil: Key Findings & Strategic Recommendations
 
-### Operational Performance Assessment
+### Executive Summary
 
-**Delivery Excellence Metrics:**
-- On-time delivery performance: 96.5% meeting or exceeding estimated delivery dates
-- Regional delivery variation: 8.2 days (São Paulo) to 18.3 days (remote Amazônia states)
-- Customer delivery satisfaction: Strong correlation between delivery speed and repeat purchase rates
+Our analysis of Target's e-commerce data from 2016 to 2018 reveals a story of remarkable, rapid growth in the Brazilian market. However, this growth has been heavily concentrated, creating a "two-speed" business:
 
-**Transaction Processing Efficiency:**
-- Payment processing success: 99.8% transaction completion rate
-- Payment method distribution: Credit cards (73.9%), Installments (24%), Other methods (2.1%)
-- Average processing time: Sub-24 hour payment confirmation across all methods
+1.  **The Core:** A highly profitable and logistically efficient operation centered in metropolitan hubs like São Paulo.
+2.  **The Frontier:** The vast, untapped potential of the rest of the country, which is currently held back by significant delivery and logistics challenges.
 
-## 📊 Strategic Business Intelligence
+Our future success depends on bridging this gap. This analysis provides a data-driven roadmap to optimize our core operations, strategically expand into new regions, and build a truly national brand.
 
-### Market Opportunity Landscape
+### Key Finding 1: Growth is Explosive but Geographically Concentrated
 
-**Underserved Market Analysis:**
-The analysis reveals 17 Brazilian states with less than 1% market penetration, representing approximately 45 million potential customers in regions where Target currently has minimal presence. These markets, primarily concentrated in Brazil's interior and northern regions, demonstrate distinct characteristics:
+The business is expanding at an impressive rate, with order volume growing over 100% in 2018. However, this success is overwhelmingly driven by a single state: **São Paulo**, which accounts for nearly 42% of our entire customer base.
 
-- Lower competition from established e-commerce players
-- Growing internet penetration rates (average 68% and rising)
-- Increasing disposable income in secondary cities
-- Limited local retail options driving online adoption
+*   **Insight:** São Paulo is our engine. It is not just our largest market but also our most efficient, boasting the fastest average delivery times (8.2 days) and a highly engaged customer base.
+*   **The Opportunity:** While São Paulo is our anchor, there is a clear and immediate opportunity for growth in secondary markets like Rio de Janeiro and Minas Gerais. These states show strong demand but have not yet received the strategic focus required to reach their full potential.
 
-**Seasonal Demand Intelligence:**
-Month-by-month analysis reveals pronounced seasonal patterns with August consistently delivering peak performance (10,843 orders), followed by strong performance in May (10,576 orders) and July (10,130 orders). This pattern aligns with Brazilian shopping behavior during winter months and pre-holiday preparation periods, suggesting opportunities for:
+*(Placeholder for Customer Distribution by State Map)*
+![Customer Distribution Map](visualizations/customer_distribution_map.png)
 
-- Targeted inventory build-up ahead of peak seasons
-- Marketing campaign optimization during high-conversion periods
-- Supplier relationship management to ensure adequate stock levels
+### Key Finding 2: A Critical Divide in Customer Experience
 
-**Daily Shopping Behavior Insights:**
-Time-of-day analysis reveals Brazilian customers' strong preference for afternoon shopping (13-18h), accounting for 35% of daily order volume. This pattern differs significantly from North American markets and suggests localized optimization opportunities:
+The data reveals a stark difference in the customer experience between regions. This operational divide is the single biggest threat to our national expansion and brand reputation.
 
-- Website performance optimization during peak traffic hours
-- Customer service staffing aligned with purchase patterns
-- Marketing campaign timing to maximize engagement
-- Server capacity planning for traffic spikes
+*   **Insight:** A delivery in São Paulo takes, on average, just **8 days**. In stark contrast, an order to more remote northern states like Roraima (RR) can take over **18 days**. This vast disparity means a "Target customer" in one part of Brazil has a fundamentally different, and worse, experience than in another.
+*   **The Problem:** High freight costs and long delivery times in these "frontier" states create dissatisfied customers and make sustainable growth almost impossible. We cannot become a national leader with a fractured logistics network.
 
-### Geographic Performance Deep Dive
+*(Placeholder for Average Delivery Time by State Chart)*
+![Delivery Time Chart](visualizations/delivery_time_chart.png)
 
-**Metropolitan Market Leadership:**
-São Paulo emerges as Target's dominant market, contributing 41.7% of the total customer base with superior operational metrics:
+### Key Finding 3: Brazilian Customers Have Clear & Actionable Habits
 
-- Average delivery time: 8.2 days (35% faster than national average)
-- Customer lifetime value: 23% above national average
-- Repeat purchase rate: 72% (highest among all states)
-- Average order value: R$ 156.30 (13% premium to national average)
+Our analysis of purchase timestamps and payment data paints a clear picture of the Brazilian online shopper, giving us a powerful tool to tailor our strategy.
 
-**Secondary Market Opportunities:**
-Rio de Janeiro and Minas Gerais represent high-potential secondary markets with distinct characteristics:
+*   **Insight:**
+    *   **Peak Shopping Time:** The majority of orders (35%) are placed in the **afternoon (1-6 PM)**.
+    *   **Peak Shopping Season:** Sales spike dramatically in the months leading up to the holidays, particularly **August and November**.
+    *   **Preferred Payment:** **Credit cards** are the dominant payment method (74% of transactions), and the use of **installments** is extremely popular, signaling that customers value financial flexibility.
+*   **The Takeaway:** These patterns are consistent and predictable. They provide a clear guide for when to schedule marketing campaigns, how to manage website server load, and which payment features to emphasize.
 
-**Rio de Janeiro:**
-- Strong brand recognition and purchasing power
-- Delivery performance: 9.1 days average (competitive with São Paulo)
-- Growth trajectory: 89% year-over-year order increase
-- Premium product preference: 18% higher average order values
+---
 
-**Minas Gerais:**
-- Rapid adoption in interior cities beyond Belo Horizonte
-- Emerging market with 127% year-over-year growth
-- Price-sensitive customer base favoring installment payments (31% adoption)
-- Logistics optimization opportunity with strategic fulfillment center placement
+## Strategic Recommendations
 
-**Challenge Markets Requiring Strategic Intervention:**
-Northern and remote states present significant operational challenges that limit growth potential:
+Based on these findings, we propose a three-pronged strategy to build upon our successes and address our core challenges.
 
-- Amazônia region states: 18+ day average delivery times
-- Freight costs: 15-20% higher than national average
-- Lower order frequency: 43% below metropolitan market rates
-- Infrastructure limitations affecting last-mile delivery options
+#### **Recommendation 1: Defend the Core, Expand Smartly**
+Instead of a broad, unfocused expansion, we should pursue a targeted, two-stage approach.
 
-### Customer Behavior and Preferences Analysis
+*   **Action:** Continue to nurture the São Paulo market while launching a strategic expansion into high-potential secondary markets like **Rio de Janeiro** and **Minas Gerais**. Before a full marketing push, we must first ensure our logistics and delivery performance in these new regions can match the "São Paulo standard."
 
-**Payment Method Evolution:**
-Payment preferences reveal important insights into Brazilian consumer behavior and economic conditions:
-
-**Credit Card Dominance (73.9% of transactions):**
-- Reflects growing middle-class purchasing power
-- Strong correlation with higher order values (average R$ 145.80)
-- Lower refund rates (2.1%) indicating purchase confidence
-
-**Installment Payment Growth (24% adoption):**
-- Particularly popular for orders exceeding R$ 200
-- Average installment period: 4.2 months
-- Higher customer lifetime value despite lower initial margins
-- Growing trend in secondary markets (35% year-over-year increase)
-
-**Shopping Pattern Intelligence:**
-- Weekend activity: 20% higher order volume compared to weekdays
-- Mobile shopping growth: 34% of orders placed via mobile devices
-- Repeat purchase timing: Average 47 days between orders for retained customers
-- Cross-category purchasing: 67% of customers purchase from multiple product categories
-
-### Delivery Performance and Logistics Analysis
-
-**Best-in-Class Performance Markets:**
-Top-performing states demonstrate the potential for operational excellence across Target's network:
-
-1. **São Paulo (8.2 days average):** Dense urban infrastructure and multiple fulfillment options
-2. **Rio de Janeiro (9.1 days):** Established logistics partnerships and urban concentration  
-3. **Paraná (9.8 days):** Strategic location for southern region distribution
-
-**Performance Improvement Opportunities:**
-States requiring immediate logistics attention represent significant customer experience enhancement potential:
-
-1. **Amazônia Region (18+ days):** Partnership opportunities with local carriers
-2. **Interior Northeast (15+ days):** Regional fulfillment center consideration
-3. **Rural Markets (13+ days):** Last-mile delivery innovation required
-
-**Freight Cost Optimization Analysis:**
-Regional freight cost analysis reveals significant optimization opportunities:
-- National average: 8.7% of order value
-- Most efficient markets: 6.2% (São Paulo metropolitan area)
-- Highest cost markets: 14.3% (remote northern states)
-- Potential savings: R$ 2.3M annually through logistics optimization
-
-## 🚀 Strategic Action Framework
-
-### Immediate Priority Actions (Q1 2019)
-
-**1. Peak Season Readiness Initiative**
-August consistently demonstrates 40% higher order volumes than average months, requiring immediate preparation:
-- Inventory investment: Increase stock levels by 45% for top-performing categories
-- Supplier negotiations: Secure capacity commitments from key vendors
-- Fulfillment capacity: Temporary staff augmentation and facility space optimization
-- Customer communication: Proactive delivery expectation management
-
-**2. Payment Option Enhancement Program**
-With 24% of customers preferring installment payments and growing adoption in secondary markets:
-- Partner expansion: Negotiate terms with additional installment providers
-- Risk management: Implement enhanced fraud detection for installment transactions
-- Customer education: Develop campaigns highlighting flexible payment options
-- Technical implementation: Streamline checkout process for installment selections
-
-**3. Logistics Performance Improvement**
-Focus on bottom-performing states to improve overall customer satisfaction:
-- Carrier partnerships: Establish relationships with regional logistics providers
-- Performance monitoring: Implement real-time tracking and delivery alerts
-- Customer service: Enhanced support for delivery-related inquiries
-- Compensation programs: Develop policies for delivery delays and issues
-
-### Medium-Term Strategic Initiatives (6-18 Months)
-
-**1. Geographic Expansion Strategy**
-Target underserved states with systematic market entry approach:
-
-**Phase 1 Markets (6-9 months):**
-- Bahia, Pernambuco, Ceará: Large population centers with growing e-commerce adoption
-- Investment required: R$ 15M for marketing and logistics infrastructure
-- Expected ROI: 18-month payback period based on penetration modeling
-
-**Phase 2 Markets (9-18 months):**
-- Goiás, Mato Grosso, Rondônia: Emerging markets with agricultural wealth
-- Strategic approach: Partnership with local retailers for market entry
-- Expected impact: 25% increase in total addressable market
-
-**2. Technology and Analytics Investment**
-Data-driven optimization to enhance customer experience and operational efficiency:
-- Predictive analytics: Demand forecasting system reducing inventory costs by 12%
-- Customer segmentation: Personalized marketing reducing acquisition costs by 18%
-- Logistics optimization: Route planning system improving delivery times by 15%
-- Mobile experience: Enhanced mobile platform targeting 50% mobile order share
-
-**3. Regional Fulfillment Network Development**
-Strategic distribution center placement to improve delivery performance:
-- Northeast Hub (Recife): Serving 8 states with 6-day delivery targets
-- Central Hub (Brasília): Interior market access with 7-day delivery goals  
-- South Extension (Porto Alegre): Enhanced southern market coverage
-- Investment: R$ 45M over 18 months with 24-month ROI projection
-
-### Long-Term Vision Implementation (18+ Months)
-
-**1. Market Leadership Consolidation**
-Establish dominant position in top 10 Brazilian states:
-- Brand awareness campaigns targeting 85% aided awareness
-- Customer retention programs achieving 75% repeat purchase rates
-- Premium service offerings for high-value customer segments
-- Competitive differentiation through superior delivery and service
-
-**2. Operational Excellence Program**
-World-class e-commerce operations matching global Target standards:
-- Same-day delivery in metropolitan markets (São Paulo, Rio de Janeiro)
-- 95% of orders delivered within estimated timeframes
-- Customer satisfaction scores exceeding 4.5/5.0 across all regions
-- Cost optimization achieving 15% improvement in logistics efficiency
-
-**3. Innovation and Future Readiness**
-Position Target Brazil for next-generation e-commerce trends:
-- Omnichannel integration with potential physical store presence
-- Sustainability initiatives addressing Brazilian environmental concerns
-- Social commerce integration leveraging Brazilian social media usage
-- Emerging technology adoption (AI, automation, IoT) for competitive advantage
-
-## 💰 Financial Impact and ROI Analysis
-
-### Revenue Growth Projections
-
-**Short-Term Revenue Impact (12 months):**
-- Geographic expansion: R$ 23M additional revenue (15% increase)
-- Payment optimization: R$ 8M from improved conversion (5% increase)  
-- Seasonal optimization: R$ 12M from better peak season performance (8% increase)
-- Total projected increase: R$ 43M (28% revenue growth)
-
-**Medium-Term Revenue Potential (24 months):**
-- Market penetration in underserved states: R$ 67M annual run-rate
-- Customer lifetime value improvement: R$ 34M from retention programs
-- Premium service offerings: R$ 18M from value-added services
-- Total additional revenue potential: R$ 119M (78% growth from baseline)
-
-### Cost Optimization Opportunities
-
-**Logistics Efficiency Improvements:**
-- Freight cost reduction: R$ 4.2M annually through network optimization
-- Inventory carrying cost: R$ 2.8M savings from demand forecasting
-- Customer service cost: R$ 1.6M reduction from delivery performance improvement
-- Total operational savings: R$ 8.6M annually
-
-**Technology Investment ROI:**
-- Customer acquisition cost reduction: 25% improvement through analytics
-- Marketing efficiency: 30% better targeting reducing waste
-- Operational automation: 18% reduction in manual processing costs
-- Net technology ROI: 340% over 36-month implementation period
-
-### Market Share and Competitive Position
-
-**Current Market Position:**
-- Estimated 3.2% share of Brazilian e-commerce market in served categories
-- Strong position in metropolitan markets (6.8% share in São Paulo)
-- Limited presence in interior markets (0.8% average share)
-
-**Growth Potential Assessment:**
-- Addressable market expansion: +45% through geographic growth
-- Category expansion opportunities: +32% through product line extensions
-- Customer segment development: +28% through demographic targeting
-- Total market opportunity: 2.1x current addressable market size
-
-## 🎯 Success Metrics and Performance Monitoring
-
-### Financial Performance Indicators
-
-**Revenue Metrics:**
-- Monthly revenue growth rate (target: 12-15% sustained)
-- Average order value trends (maintain R$ 135+ baseline)
-- Customer acquisition cost by state (optimize to <R$ 45)
-- Customer lifetime value growth (target: 25% improvement)
-- Geographic revenue distribution (reduce concentration risk)
-
-**Profitability Indicators:**
-- Gross margin by product category and region
-- Contribution margin by customer segment
-- Logistics cost as percentage of revenue (target: <8%)
-- Marketing efficiency ratio (revenue/marketing spend)
-
-### Operational Excellence Metrics
-
-**Customer Experience:**
-- Net Promoter Score by state (target: >50 across all regions)
-- Delivery performance (95% on-time delivery rate)
-- Customer service response time (<2 hours for urgent issues)
-- Return/refund processing time (<5 business days)
-- Website performance during peak traffic periods
-
-**Operational Efficiency:**
-- Order fulfillment accuracy (target: 99.5%)
-- Inventory turnover rate by category
-- Warehouse productivity metrics
-- Technology system uptime (target: 99.9%)
-- Employee productivity and satisfaction scores
-
-### Strategic Progress Indicators
-
-**Market Development:**
-- New market penetration rates in target states
-- Brand awareness scores in expansion markets  
-- Competitive market share in key categories
-- Customer acquisition rate in underserved regions
-- Partnership development and integration success
-
-**Innovation and Adaptation:**
-- New feature adoption rates
-- Mobile commerce growth trajectory
-- Payment method diversification success
-- Sustainability initiative impact measurement
-- Technology implementation milestone achievement
-
-## Implementation Roadmap and Next Steps
-
-### Phase 1: Foundation Strengthening (Months 1-6)
-- Immediate operational improvements in delivery and payment processing
-- Peak season preparation and inventory optimization
-- Customer service enhancement and satisfaction improvement
-- Performance monitoring system implementation
-
-### Phase 2: Expansion and Growth (Months 7-18)
-- Geographic expansion into identified high-potential markets
-- Technology platform enhancement and analytics implementation
-- Regional fulfillment network development
-- Strategic partnership establishment
-
-### Phase 3: Market Leadership (Months 19-36)
-- Dominant market position consolidation in top states
-- Innovation initiative launch and competitive differentiation
-- Operational excellence achievement across all metrics
-- Preparation for next phase of growth and expansion
-
-This comprehensive analysis provides Target with a data-driven roadmap for transforming its Brazilian e-commerce operations from a growing startup to a market-leading platform. The combination of immediate tactical improvements and long-term strategic investments positions the company to capture the significant opportunities present in Brazil's dynamic e-commerce landscape while building sustainable competitive advantages.
+#### **Recommendation 2: Fix the Logistics Frontier**
+To build a trusted national brand, we must solve the delivery problem in our most challenging regions.
+
+*   **Action:** Prioritize logistics optimization for the northern and interior states. This requires actively exploring partnerships with regional delivery carriers who have better local knowledge. In the medium term, we should conduct a cost-benefit analysis for establishing a new fulfillment center in a strategic location like **Recife** to drastically cut delivery times to the entire Northeast region.
+
+#### **Recommendation 3: Align with Customer Behavior**
+We should use the clear patterns in customer behavior to our advantage to increase conversion and efficiency.
+
+*   **Action:**
+    *   Align major marketing promotions with observed peak shopping times (**afternoons**) and key sales months (**August, November**).
+    *   Prominently feature and promote flexible **credit card installment options** during checkout and in all marketing materials to directly appeal to established customer preferences and drive higher average order values.
+
+## How to Use This Project
+
+1.  **Clone the Repository:**
+    ```bash
+    git clone https://github.com/AnkitDatascience07/Ecommerce_analysis_SQL_Project.git
+    ```
+2.  **Run the Analysis:** The complete set of queries used for this study can be found in `sql_queries/analysis.sql`. These queries are written for Google BigQuery and can be executed directly in the BQ console.
+3.  **View the Visualizations:** Key charts and dashboards are located in the `/visualizations` folder. *(Ensure you create these visuals and add them to the folder)*.
